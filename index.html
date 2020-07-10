@@ -1,0 +1,85 @@
+<html><head>
+    <title>chty's blogs</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="main.css">
+    <noscript><link rel="stylesheet" href="noscript.css" /></noscript>
+    <meta name="theme-color" content="#22849f">
+    <style type="text/css">
+        body {
+            height: 100%;
+            background-image: url("background.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position:bottom center;
+            background-attachment:fixed;
+        }
+        body:after {
+            content: '';
+            display: block;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: inherit;
+            opacity: 0;
+            z-index: 1;
+            background-color: #ffffff;
+            background-image: url("background.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            -moz-transition: opacity 1.75s ease-out;
+            -webkit-transition: opacity 1.75s ease-out;
+            -ms-transition: opacity 1.75s ease-out;
+            transition: opacity 1.75s ease-out;
+        }
+        body.is-loading:after {
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body background="img/bg3.jpg">
+
+<!-- Wrapper -->
+<div id="wrapper">
+
+    <!-- Main -->
+    <section id="main">
+        <header>
+            <span class="avatar"><img src="avatar.jpg" height="130" width="130" alt=""></span>
+            <h1>chty's blog</h1>
+            <p>虽无丝与竹，玄泉有清声。虽无啸与歌，咏言有馀馨。</p>
+        </header>
+        <footer>
+            <ul class="actions">
+                <li><a href="/blog" class="button">OI BLOG</a></li>
+				<li><a href="http://123.57.16.2/" class="button">ZJU LIFE</a></li>
+                <li><a href="http://nerds.pub/" class="button">Nerd Pub</a></li>
+            </ul>
+        </footer>
+    </section>
+    
+
+    <!-- Footer -->
+    <footer id="footer">
+            © chty            <br>
+            <ul class="copyright">
+            <li>Use: <a href="https://github.com/BakaChinatsu/uuz-h5theme">uuz-h5theme</a></li>
+            <li>Powered: <a href="http://html5up.net">HTML5 UP</a></li>
+</ul>
+    </footer>
+
+</div>
+
+<!-- Scripts -->
+<!--[if lte IE 8]><script src="assets/js/respond.min.js"></script><![endif]-->
+<script>
+    if ('addEventListener' in window) {
+        window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-loading\b/, ''); });
+        document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
+    }
+</script>
+
+</body></html>
